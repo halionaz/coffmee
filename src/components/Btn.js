@@ -1,7 +1,18 @@
-import style from '../style/Btn.module.css';
+import style from "../style/Btn.module.css";
 
-function Btn({text}){
-    return <div className={style.btn}><p className={style.content}>{text}</p></div>
+function Btn({ text, setStage }) {
+    return (
+        <div
+            className={style.btn}
+            onClick={() => {
+                setStage((prev) => {
+                    return prev + 1;
+                });
+            }}
+        >
+            <p className={style.content}>{text}</p>
+        </div>
+    );
 }
 
 export default Btn;
