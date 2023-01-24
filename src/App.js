@@ -2,6 +2,7 @@ import emptyCup from "./emptyCup.svg";
 import "./App.css";
 import Btn from "./components/Btn";
 import { useEffect, useState } from "react";
+import style from "./style/App.module.css";
 
 const question = [];
 const EQuest = [
@@ -35,7 +36,7 @@ const PQuest = [
 ]
 
 function App() {
-    const [stage, setStage] = useState(0);
+    const [stage, setStage] = useState(1);
     useEffect(()=>{
         console.log(stage);
     }, [stage]);
