@@ -1,8 +1,6 @@
-import emptyCup from "./emptyCup.svg";
 import "./App.css";
-import Btn from "./components/Btn";
 import { useEffect, useState } from "react";
-import style from "./style/App.module.css";
+import Start from "./components/Start";
 
 const question = [];
 const EQuest = [
@@ -36,7 +34,7 @@ const PQuest = [
 ]
 
 function App() {
-    const [stage, setStage] = useState(1);
+    const [stage, setStage] = useState(0);
     useEffect(()=>{
         console.log(stage);
     }, [stage]);
@@ -44,13 +42,7 @@ function App() {
         case 0 :
             return (
                 <div className="App">
-                    <h1>
-                        나와 어울리는
-                        <br />
-                        커피 찾기 테스트
-                    </h1>
-                    <img src={emptyCup} className="App-logo" alt="cup img logo" />
-                    <Btn text={`시작하기`} setStage={setStage}></Btn>
+                    <Start setStage={setStage} />
                 </div>
             );
     }
