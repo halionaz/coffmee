@@ -6,6 +6,11 @@ p{
     border-radius: 50px;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 100ms, color 100ms;
+}
+.btn:hover{
+    background-color: #59452D;
+    color: #ffffff;
 }
 
 .content{

@@ -1,6 +1,6 @@
 // 랜딩 페이지
 import Btn from "./Btn";
-import emptyCup from "../img/emptyCup.svg";
+import emptyCup from "../img/emptyCup.png";
 import style from "../style/Start.module.css";
 
 const Start = ({setStage}) => {
