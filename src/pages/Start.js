@@ -1,5 +1,5 @@
 // 랜딩 페이지
-import Btn from "./Btn";
+import Btn from "../components/Btn";
 import emptyCup from "../img/emptyCup.png";
 import style from "../style/Start.module.css";
 

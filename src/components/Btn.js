@@ -1,12 +1,12 @@
 import style from "../style/Btn.module.css";
 
-function Btn({ text, setStage }) {
+function Btn({ text, setStage, diff = 1 }) {
     return (
         <div
             className={style.btn}
             onClick={() => {
                 setStage((prev) => {
-                    return prev + 1;
+                    return prev + diff;
                 });
             }}
         >

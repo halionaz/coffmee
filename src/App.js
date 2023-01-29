@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import Start from "./components/Start";
+import Start from "./pages/Start";
+import Question from "./pages/Question";
 
 const quests = [[
     {query : "친해지고 싶은 사람에게 다가가 대화를 시작하는 것이 크게 어렵지 않다.", kind: "E", type: true},
@@ -45,13 +46,19 @@ for(let i = 0; i < 4; i++){
 
 function App() {
     const [stage, setStage] = useState(0);
-    switch(stage){
-        case 0 :
-            return (
-                <div className="App">
-                    <Start setStage={setStage} />
-                </div>
-            );
+    if(stage === 0){
+        return(
+            <div className="App">
+                <Start setStage={setStage} />
+            </div>
+        );
+    } else if(stage >= 1 && stage <= 12){
+        return (
+            <div className="App">
+                <Question stage={stage} setStage={setStage} />
+            </div>
+
+        )
     }
 }
 
