@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import Start from "./pages/Start";
 import Question from "./pages/Question";
 
+const shuffle = (array) => {
+    array.sort(() => Math.random() - 0.5);
+};
+
 const quests = [
     [
         {
@@ -125,6 +129,9 @@ for (let i = 0; i < 4; i++) {
     }
 }
 
+// 질문을 쓰까
+shuffle(questions);
+
 function App() {
     const [stage, setStage] = useState(0);
     const [point, setPoint] = useState({
@@ -146,7 +153,7 @@ function App() {
                 <Question
                     stage={stage}
                     setStage={setStage}
-                    quest={questions[stage-1]}
+                    quest={questions[stage - 1]}
                     setPoint={setPoint}
                 />
             </div>
