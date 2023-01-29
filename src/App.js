@@ -133,6 +133,7 @@ function App() {
         T: 0,
         P: 0,
     });
+    console.log(point);
     if (stage === 0) {
         return (
             <div className="App">
@@ -142,7 +143,12 @@ function App() {
     } else if (stage >= 1 && stage <= 12) {
         return (
             <div className="App">
-                <Question stage={stage} setStage={setStage} questions={questions} />
+                <Question
+                    stage={stage}
+                    setStage={setStage}
+                    quest={questions[stage-1]}
+                    setPoint={setPoint}
+                />
             </div>
         );
     }

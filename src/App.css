@@ -9,3 +9,7 @@ h1{
     font-size: 40px;
     font-weight: 900;
 }
+h2{
+    margin: 0;
+    padding: 10px;
+}

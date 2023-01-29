@@ -1,5 +1,5 @@
 // 랜딩 페이지
-import Btn from "../components/Btn";
+import StartBtn from "../components/StartBtn";
 import emptyCup from "../img/emptyCup.png";
 import style from "../style/Start.module.css";
 
@@ -12,7 +12,7 @@ const Start = ({setStage}) => {
                 커피 찾기 테스트
             </h1>
             <img src={emptyCup} className={style.logo} alt="cup img logo" />
-            <Btn text={`시작하기`} setStage={setStage}></Btn>
+            <StartBtn text={`시작하기`} setStage={setStage}></StartBtn>
         </div>
     );
 };

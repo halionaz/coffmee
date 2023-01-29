@@ -1,6 +1,6 @@
-import style from "../style/Btn.module.css";
+import style from "../style/StartBtn.module.css";
 
-function Btn({ text, setStage, diff = 1 }) {
+function StartBtn({ text, setStage, diff = 1 }) {
     return (
         <div
             className={style.btn}
@@ -15,4 +15,4 @@ function Btn({ text, setStage, diff = 1 }) {
     );
 }
 
-export default Btn;
+export default StartBtn;
