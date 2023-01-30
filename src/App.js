@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import Start from "./pages/Start";
 import Question from "./pages/Question";
+import Result from "./pages/Result";
 
 const shuffle = (array) => {
     array.sort(() => Math.random() - 0.5);
@@ -158,6 +159,13 @@ function App() {
                 />
             </div>
         );
+    } else{
+        // 결과창
+        return (
+            <div className="App">
+                <Result point={point} />
+            </div>
+        )
     }
 }
 
