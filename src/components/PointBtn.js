@@ -15,19 +15,19 @@ const PointBtn = ({ number, setPoint, quest, setStage }) => {
         <div
             className={style.btn}
             onClick={() => {
+                setStage((prev) => {
+                    return prev + 1;
+                });
                 setPoint((prev) => {
-                    setStage((prev) => {
-                        return prev + 1;
-                    });
                     switch (quest.kind) {
                         case "E":
-                            return { ...prev, E: prev.E + weight * (number - 3) };
+                            return [ ...prev, {type : "E", W : weight * (number - 3)} ];
                         case "N":
-                            return { ...prev, N: prev.N + weight * (number - 3) };
+                            return [ ...prev, {type : "N", W : weight * (number - 3)} ];
                         case "T":
-                            return { ...prev, T: prev.T + weight * (number - 3) };
+                            return [ ...prev, {type : "T", W : weight * (number - 3)} ];
                         case "P":
-                            return { ...prev, P: prev.P + weight * (number - 3) };
+                            return [ ...prev, {type : "P", W : weight * (number - 3)} ];
                         default :
                             break;
                     }

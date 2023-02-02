@@ -5,6 +5,9 @@ function StartBtn({ text, setStage, diff = 1 }) {
         <div
             className={style.btn}
             onClick={() => {
+                if(diff === -1){
+                    // 뒤로 가기임
+                }
                 setStage((prev) => {
                     return prev + diff;
                 });

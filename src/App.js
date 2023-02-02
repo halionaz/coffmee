@@ -135,13 +135,10 @@ shuffle(questions);
 
 function App() {
     const [stage, setStage] = useState(0);
-    const [point, setPoint] = useState({
-        E: 0,
-        N: 0,
-        T: 0,
-        P: 0,
-    });
-    console.log(point);
+    const [point, setPoint] = useState([]);
+    useEffect(() => {
+        console.log(point);
+    }, [point]);
     if (stage === 0) {
         return (
             <div className="App">
@@ -159,13 +156,22 @@ function App() {
                 />
             </div>
         );
-    } else{
+    } else {
         // 결과창
+        const result = {
+            E: 0,
+            N: 0,
+            T: 0,
+            P: 0,
+        };
+        point.forEach((q) => {
+            result[q.type] += q.W;
+        });
         return (
             <div className="App">
-                <Result point={point} />
+                <Result point={result} />
             </div>
-        )
+        );
     }
 }
 
