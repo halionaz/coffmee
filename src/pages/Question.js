@@ -15,7 +15,7 @@ const Question = ({ stage, setStage, quest, setPoint }) => {
                     <PointBtn key={num} number={num} setPoint={setPoint} quest={quest} setStage={setStage} />
                 );
             })}
-            <Btn text={"뒤로가기"} setStage={setStage} setPoint={setPoint} diff={-1} />
+            {stage !== 1 && <Btn text={"뒤로가기"} setStage={setStage} setPoint={setPoint} diff={-1} />}
         </div>
     );
 };

@@ -10,7 +10,7 @@ function StartBtn({ text, setStage, diff = 1, setPoint }) {
                     setPoint((prev) => {
                         const newPoint = [];
                         for(let i = 0 ; i < prev.length; i++){
-                            if(i != prev.length - 1){
+                            if(i !== prev.length - 1){
                                 newPoint.push(prev[i]);
                             }
                         }
