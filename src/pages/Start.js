@@ -3,16 +3,21 @@ import StartBtn from "../components/StartBtn";
 import emptyCup from "../img/emptyCup.png";
 import style from "../style/Start.module.css";
 
-const Start = ({setStage}) => {
+const Start = ({ setStage }) => {
     return (
         <div className={style.App}>
-            <h1>
-                나와 어울리는
-                <br />
-                커피 찾기 테스트
-            </h1>
+            <div className={style.title}>
+                <h1>
+                    <div className={style.sub}>나와 닮은</div>
+                    <div className={style.main}>커피 찾기</div>
+                </h1>
+                <div className={style.text}>당신은 어떤 커피와 어울리나요?</div>
+            </div>
             <img src={emptyCup} className={style.logo} alt="cup img logo" />
-            <StartBtn text={`시작하기`} setStage={setStage}></StartBtn>
+            <div className={style.btnFlex}>
+                <StartBtn text={`시작하기`} setStage={setStage}></StartBtn>
+                <div className={style.share}>친구에게 공유하기</div>
+            </div>
         </div>
     );
 };
