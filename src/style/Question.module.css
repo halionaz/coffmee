@@ -9,15 +9,25 @@
     align-items: center;
     justify-content: center;
 
+    background-color: #DED3C0;
+
     gap : 40px;
 }
 .Numbering{
-    font-family: 'Noto Sans';
-    font-style: normal;
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 60px;
     line-height: 20px;
     color: #373737;
+}
+.query{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    width: 85%;
+    text-align: center;
+    word-break: keep-all;
 }
 .number{
     display: flex;
