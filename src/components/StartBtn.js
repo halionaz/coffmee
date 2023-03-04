@@ -1,29 +1,13 @@
+import { Link } from "react-router-dom";
 import style from "../style/StartBtn.module.css";
 
-function StartBtn({ text, setStage, diff = 1, setPoint }) {
+function StartBtn({ text}) {
     return (
-        <div
-            className={style.btn}
-            onClick={() => {
-                if (diff === -1) {
-                    // 뒤로 가기임
-                    setPoint((prev) => {
-                        const newPoint = [];
-                        for(let i = 0 ; i < prev.length; i++){
-                            if(i !== prev.length - 1){
-                                newPoint.push(prev[i]);
-                            }
-                        }
-                        return newPoint;
-                    });
-                }
-                setStage((prev) => {
-                    return prev + diff;
-                });
-            }}
-        >
-            <p className={style.content}>{text}</p>
-        </div>
+        <Link to="/question">
+            <div className={style.btn}>
+                <p className={style.content}>{text}</p>
+            </div>
+        </Link>
     );
 }
 
