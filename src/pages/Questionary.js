@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Question from "./Question";
+import Question from "../components/Question";
 import quests from "../data/quests";
 import { useNavigate } from "react-router-dom";
 

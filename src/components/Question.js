@@ -1,7 +1,7 @@
 // 질문창
 
-import PointBtn from "../components/PointBtn";
-import Btn from "../components/StartBtn";
+import PointBtn from "./PointBtn";
+import Btn from "./StartBtn";
 
 const pointList = [1, 2, 3, 4, 5];
 
