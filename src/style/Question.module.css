@@ -65,7 +65,7 @@
 .progressBar::-webkit-progress-bar{
     border-radius: 20px;
     height: 8px;
-    background-color: #BF9D7E;
+    background: linear-gradient(90deg, #CBC5B9 0%, #F1DDB9 100%);
 }
 .progressBar::-webkit-progress-value{
     border-radius: 20px;
