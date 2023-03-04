@@ -1,10 +1,16 @@
 import style from "../style/BackBtn.module.css";
+import { useNavigate } from "react-router-dom";
 
-function BackBtn({ text, setStage, setPoint }) {
+function BackBtn({ stage, text, setStage, setPoint }) {
+    const navigate = useNavigate();
     return (
         <div
             className={style.btn}
             onClick={() => {
+                if(stage === 0){
+                    // 1번째 질문에서 뒤로가기 누르면 홈화면으로 보내줌
+                    return navigate(`/`);
+                }
                 setPoint((prev) => {
                     const newPoint = [];
                     for (let i = 0; i < prev.length; i++) {

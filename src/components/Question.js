@@ -31,14 +31,14 @@ const Question = ({ stage, setStage, quest, setPoint }) => {
                 </div>
             </div>
             <progress className={style.progressBar} max="12" value={stage} />
-            {stage !== 0 && (
-                <Btn
-                    text={"뒤로가기"}
-                    setStage={setStage}
-                    setPoint={setPoint}
-                    diff={-1}
-                />
-            )}
+
+            <Btn
+                stage={stage}
+                text={"뒤로가기"}
+                setStage={setStage}
+                setPoint={setPoint}
+                diff={-1}
+            />
         </div>
     );
 };
