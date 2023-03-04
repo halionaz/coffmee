@@ -29,7 +29,25 @@
     text-align: center;
     word-break: keep-all;
 }
-.number{
+
+.survey{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    width: 290px;
+}
+.description{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.numbers{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -1,4 +1,12 @@
 .btn{
     cursor: pointer;
     display: inline-block;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+
+    color: #464646;
 }

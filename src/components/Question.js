@@ -11,15 +11,34 @@ const Question = ({ stage, setStage, quest, setPoint }) => {
         <div className={style.Question}>
             <h2 className={style.Numbering}>{stage + 1}</h2>
             <p className={style.query}>{quest.query}</p>
-            <div className={style.numbers}>
-                {pointList.map((num) => {
-                    return (
-                        <PointBtn key={num} number={num} setPoint={setPoint} quest={quest} setStage={setStage} />
-                    );
-                })}
+            <div className={style.survey}>
+                <div className={style.description}>
+                    <div>그렇지 않다</div>
+                    <div>그렇다</div>
+                </div>
+                <div className={style.numbers}>
+                    {pointList.map((num) => {
+                        return (
+                            <PointBtn
+                                key={num}
+                                number={num}
+                                setPoint={setPoint}
+                                quest={quest}
+                                setStage={setStage}
+                            />
+                        );
+                    })}
+                </div>
             </div>
             <progress className={style.progressBar} max="12" value={stage} />
-            {stage !== 0 && <Btn text={"뒤로가기"} setStage={setStage} setPoint={setPoint} diff={-1} />}
+            {stage !== 0 && (
+                <Btn
+                    text={"뒤로가기"}
+                    setStage={setStage}
+                    setPoint={setPoint}
+                    diff={-1}
+                />
+            )}
         </div>
     );
 };
