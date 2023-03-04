@@ -25,7 +25,14 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 34px;
+
     width: 85%;
+    height: 136px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
     word-break: keep-all;
 }
