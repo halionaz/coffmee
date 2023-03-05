@@ -29,6 +29,8 @@ const PointBtn = ({ number, setPoint, quest, setStage }) => {
         case 5 :
             BC = "#AED9E0";
             break;
+        default :
+            BC = "#FFFFFF";
     }
 
     return (
