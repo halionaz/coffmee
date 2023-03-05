@@ -3,8 +3,21 @@ p{
 }
 .btn{
     cursor: pointer;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+
+    width: 105px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content{
     font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
 }
