@@ -3,6 +3,7 @@
 import style from "../style/PointBtn.module.css";
 
 let weight = 1;
+let BC;
 
 const PointBtn = ({ number, setPoint, quest, setStage }) => {
 
@@ -11,9 +12,29 @@ const PointBtn = ({ number, setPoint, quest, setStage }) => {
     } else {
         weight = -1;
     }
+
+    switch(number){
+        case 1 :
+            BC = "#FF8075";
+            break;
+        case 2 :
+            BC = "#FFA69E";
+            break;
+        case 3 :
+            BC = "#FFFFFF";
+            break;
+        case 4 :
+            BC = "#CCEBF0";
+            break;
+        case 5 :
+            BC = "#AED9E0";
+            break;
+    }
+
     return (
         <div
             className={style.btn}
+            style={{backgroundColor:BC}}
             onClick={() => {
                 setStage((prev) => {
                     return prev + 1;
