@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Question from "../components/Question";
 import quests from "../data/quests";
 import { useNavigate } from "react-router-dom";
@@ -26,14 +26,10 @@ for (let i = 0; i < 4; i++) {
 shuffle(questions);
 
 function Questionary() {
-    let navigate = useNavigate();
+    const navigate = useNavigate();
 
     const [stage, setStage] = useState(0);
     const [point, setPoint] = useState([]);
-
-    useEffect(() => {
-        console.log(point);
-    }, [point]);
 
     if (stage < 12) {
         return (
