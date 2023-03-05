@@ -19,7 +19,7 @@ const Result = () => {
             <div className={style.subTitle}>당신과 어울리는 커피는</div>
             <div className={style.coffeeName}>{data.name}</div>
         </div>
-        <img src={data.src} className={style.img} alt={`${data.coffeeName} image`} />
+        <img src={data.src} className={style.img} alt={`${data.coffeeName}`} />
     </div>;
 };
 
