@@ -1,7 +1,7 @@
 # 나에게 어울리는 커피 찾기 테스트
 커피를 주제로 한 심리 테스트
 
-![커피티아이 로고](./src/img/emptyCup.png)
+![커피티아이 로고](./public/img/emptyCup.png)
 
 ## 해야 할 일
 - 개발
