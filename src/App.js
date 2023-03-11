@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Start from "./pages/Start";
 import Result from "./pages/Result";
 import Questionary from "./pages/Questionary";
@@ -6,7 +6,7 @@ import "./App.css";
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className="App">
                 <Routes>
                     <Route path="/" element={<Start />} />
@@ -14,7 +14,7 @@ const App = () => {
                     <Route path="/result/:id" element={<Result />} />
                 </Routes>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 
