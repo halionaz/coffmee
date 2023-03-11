@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/coffmee/static/css/main.3daa9839.css",
+    "main.js": "/coffmee/static/js/main.a09abe11.js",
+    "index.html": "/coffmee/index.html",
+    "main.3daa9839.css.map": "/coffmee/static/css/main.3daa9839.css.map",
+    "main.a09abe11.js.map": "/coffmee/static/js/main.a09abe11.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3daa9839.css",
+    "static/js/main.a09abe11.js"
+  ]
+}
