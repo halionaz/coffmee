@@ -1,13 +1,6 @@
 import { useParams } from "react-router-dom";
 import style from "../style/Result.module.css";
-
-const dataSet ={
-    ENTP:{
-        name : "Caffè Mocha",
-        src : "/img/caffeLatte.png",
-        description: [],
-    }
-}
+import dataSet from "../data/resultData";
 
 const Result = () => {
 
