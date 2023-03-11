@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Start from "./pages/Start";
 import Result from "./pages/Result";
 import Questionary from "./pages/Questionary";
@@ -6,7 +6,7 @@ import "./App.css";
 
 const App = () => {
     return (
-        <HashRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <div className="App">
                 <Routes>
                     <Route path="/" element={<Start />} />
@@ -14,7 +14,7 @@ const App = () => {
                     <Route path="/result/:id" element={<Result />} />
                 </Routes>
             </div>
-        </HashRouter>
+        </BrowserRouter>
     );
 };
 

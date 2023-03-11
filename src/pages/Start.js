@@ -12,7 +12,7 @@ const Start = () => {
                 </h1>
                 <div className={style.text}>당신은 어떤 커피와 어울리나요?</div>
             </div>
-            <img src={"/img/emptyCup.png"} className={style.logo} alt="cup img logo" />
+            <img src={process.env.PUBLIC_URL + "/img/emptyCup.png"} className={style.logo} alt="cup img logo" />
             <div className={style.btnFlex}>
                 <StartBtn text={`시작하기`}></StartBtn>
                 <div className={style.share}>친구에게 공유하기</div>
