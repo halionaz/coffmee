@@ -10,9 +10,9 @@
     - [x] 질문창 구현
         - [x] 뒤로가기 구현
     - [ ] 결과창 구현
-    - [ ] figma 디자인 실제 적용
+    - [x] figma 디자인 실제 적용
     - [ ] Ads 적용
-    - [ ] Github pages 배포
+    - [x] Github pages 배포
 - 디자인
     - [x] UI Rough Sketch
     - [ ] 각 커피 별 일러스트 완성
