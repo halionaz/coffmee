@@ -1,46 +1,46 @@
 
 const dataSet ={
-    ENTP:{
+    caffeMocha:{
         name : "Caffè Mocha",
         src : "/img/caffeMocha.png",
         description: [],
     },
-    ENTJ:{
+    turkishCoffee:{
         name : "Turkish Coffee",
         src : "/img/turkishCoffee.png",
         description: [],
     },
-    ENFP:{
+    frappuccino:{
         name : "Frappuccino",
         src : "/img/frappuccino.png",
         description: [],
     },
-    ENFJ:{
+    caffeLatte:{
         name : "Caffè Latte",
         src : "/img/caffeLatte.png",
         description: [],
     },
-    ESTP:{
+    affogato:{
         name : "Affogato",
         src : "/img/affogato.png",
         description: [],
     },
-    ESTJ:{
+    espresso:{
         name : "Espresso",
         src : "/img/espresso.png",
         description: [],
     },
-    ESFP:{
+    kahluaMilk:{
         name : "Kahlua Milk",
         src : "/img/kahluaMilk.png",
         description: [],
     },
-    ESFJ:{
+    caramelMacchiato:{
         name : "Caramel Macchiato",
         src : "/img/caramelMacchiato.png",
         description: [],
     },
-    INTP:{
+    caffeEinspanner:{
         name : "Caffè Einspänner",
         src : "/img/caffeEinspanner.png",
         description: [],
