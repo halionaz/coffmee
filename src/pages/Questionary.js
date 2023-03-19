@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Question from "../components/Question";
 import quests from "../data/quests";
+import coffeeByMBTI from "../data/coffeeByMBTI";
 import { useNavigate } from "react-router-dom";
 
 const shuffle = (array) => {
@@ -74,7 +75,7 @@ function Questionary() {
         } else {
             mbti += "J";
         }
-        return navigate(`/result/${mbti}`);
+        return navigate(`/result/${coffeeByMBTI[mbti]}`);
     }
 }
 

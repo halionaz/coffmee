@@ -4,6 +4,7 @@ import dataSet from "../data/resultData";
 
 const Result = () => {
 
+    // params에 url의 인자가 들어옴
     const params = useParams();
     const mbti = params.id;
     const data = dataSet[mbti];
