@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/coffmee/static/css/main.3daa9839.css",
-    "main.js": "/coffmee/static/js/main.1edb35a5.js",
+    "main.js": "/coffmee/static/js/main.dadd2f5f.js",
     "index.html": "/coffmee/index.html",
     "main.3daa9839.css.map": "/coffmee/static/css/main.3daa9839.css.map",
-    "main.1edb35a5.js.map": "/coffmee/static/js/main.1edb35a5.js.map"
+    "main.dadd2f5f.js.map": "/coffmee/static/js/main.dadd2f5f.js.map"
   },
   "entrypoints": [
     "static/css/main.3daa9839.css",
-    "static/js/main.1edb35a5.js"
+    "static/js/main.dadd2f5f.js"
   ]
 }
